@@ -1,0 +1,102 @@
+.page-header {
+    background-color: #b2afab;
+    background-position: 50%;
+    background-size: cover;
+    min-height: 100vh;
+    max-height: 999px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+}
+
+.masthead {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../../assets/img/nature.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+  .masthead h1 {
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  .masthead h2 {
+    max-width: 20rem;
+    font-size: 1rem;
+  }
+  @media (min-width: 768px) {
+    .masthead h1 {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+  }
+  @media (min-width: 992px) {
+    .masthead {
+      height: 100vh;
+      padding: 0;
+    }
+    .masthead h1 {
+      font-size: 6.5rem;
+      line-height: 6.5rem;
+      letter-spacing: 0.8rem;
+    }
+    .masthead h2 {
+      max-width: 30rem;
+      font-size: 1.25rem;
+    }
+  }
+  @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body{
+    background: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+}
+
+.social-box .box{
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.social-box .box:hover{
+   box-shadow: 0 0 6px #6C7A89;
+}
+
+.social-box .box .box-text{
+    margin:20px 0px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.social-box .box .box-btn a{
+    text-decoration: none;
+    color: #6C7A89;
+    font-size: 16px;
+}
+
+.fa{
+     color:#4183D7;
+}
