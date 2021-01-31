@@ -1,0 +1,33 @@
+version: '3.5'
+
+services:
+    web:
+        container_name: docker-oddaleciseFrontend
+        build:
+            context: ./oddalecise
+            dockerfile: Dockerfile
+
+        volumes: # Volume binding
+            - "oddalecise/app/node_modules"
+            - "./oddalecise:/app"
+        ports:
+            - "4200:4200"
+
+
+    node:
+        container_name: docker-oddaleciseAPI
+        restart: always
+        build: ./oddaleciseAPP-API
+        ports:
+            - "3000:3000"
+        links:
+            - mongo
+    mongo:
+        container_name: mongo
+        image: mongo
+        ports:
+            - "27017:27017"
+
+
+
+
